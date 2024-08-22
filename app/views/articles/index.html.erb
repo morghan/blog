@@ -12,7 +12,8 @@
       </a>
 
       -->
-      <%= link_to article.title, article%>
+      <%= link_to article.title, article_path(article) %>
     </li>
   <% end %>
 </ul>
+<%= link_to "New Article", new_article_path %>
